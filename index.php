@@ -2,45 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-    <h1> Welkom op deze pagina</h1>
-    <?php echo "hello world"; ?>
+    <h1>deel 1</h1>
+    <?php 
+    $myArray = ['auto','fiets','brommer','bus','vliegtuig','trein'];
+    $myArray = ['auto','fiets','brommer','bus','vliegtuig','trein','boot'];
 
-    <br>
-	<?php 
-	$hello = 10;
-	$doeii = 12;
-	echo  $hello+$doeii;
+    echo count($myArray);
    ?>
 
-   <br>
+   <h2>deel2</h2>
    <?php
-    $hello = 10;
-	$doeii = 12;
-	echo  10*12;
+   $myArray = ['auto','fiets','brommer','bus','vliegtuig','trein'];
+    echo "het array heeft ".count($myArray)." elementen";
+    
+    $myArray[]= 'boot';
+    echo "het array heeft ".count($myArray)." elementen";
     ?>
 
-<br>
-<?php
-  $naam="safa";
-  echo "Welkom"  .$naam;  
+  <h3>deel3</h3>
+  <?php
+   echo regel 2 "bar"
+   echo regel 5 "4"
+   echo regel 8 "Toyota"
+   echo regel 9 "volvo, BMW, Toyota"
+   echo regel 12 "5"
+   echo regel 19 "4"
   ?>
 
- <br>
- <?php
 
-// deze code bevat veel fouten haal alle fouten eruit!
-//
+<h4>deel4</h4>
+<?php
 
-$mijnNaam="Carl";
-$jouwNaam="Camel";
-echo $mijnNaam. " zit bij " . $jouwNaam . " in de klas!"
+$cijfersPHP = [4.4, 4.6, 5.6, 6.1, 7.2];
+
+// bereken gemiddelde door alle cijfers op te tellen en te delen door het aantal//
+$gemiddelde = array_sum ($cijfersPHP) / count($aantalCijfers);
+
+echo " Gemiddelde is: ". $gemiddelde;
+echo(round($gemiddelde). "<br>");
+
+//deel4B//
+//Ik denk dat het beter is om de regels samen te voegen, omdat je code korter en makkelijker is om te schrijven//
 
 ?>
+ 
+ 
+
+
+
 
 
 
